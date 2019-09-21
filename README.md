@@ -1,6 +1,6 @@
 _WIP - Multidomain Support and what not - youd better wait till merge to master_
 
-# Firmware for Freifunk westliches Ruhrgebiet
+# Firmware for Freifunk Ruhrgebiet West
 Repository holds the site configuration to build firmware for the community
 "Freifunk Ruhrgebiet West", the configuration is not officially
 sanctioned by "Freifunk Ruhrgebiet West e.V.".
