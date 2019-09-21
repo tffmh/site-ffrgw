@@ -3,7 +3,7 @@ _WIP - Multidomain Support and what not - youd better wait till merge to master_
 # Firmware for Freifunk Ruhrgebiet West
 Repository holds the site configuration to build firmware for the community
 "Freifunk Ruhrgebiet West", the configuration is not officially
-sanctioned by "Freifunk Ruhrgebiet West e.V.".
+sanctioned by ["Freifunk Ruhrgebiet West e.V."](https://freifunk.ruhr/ "Freifunk Ruhrgebiet West e.V. Website").
 
 ## Building the firmware
 
