@@ -1,3 +1,4 @@
+#TODO: research on features and packages. Clean up used modules.
 GLUON_SITE_PACKAGES := \
 	gluon-alfred \
 	gluon-respondd \
@@ -25,6 +26,7 @@ GLUON_SITE_PACKAGES := \
 GLUON_SITE_PACKAGES += \
 	gluon-ssid-changer
 
+#TODO: enable multidomain support
 # Languages to include
 GLUON_LANGS ?= en de
 
@@ -38,9 +40,6 @@ GLUON_PRIORITY ?= 0
 
 # Region code required for some images; supported values: us eu
 GLUON_REGION ?= eu
-
-# Select ath10k Firmware for adhoc
-# GLUON_ATH10K_MESH ?= 11s
 
 # Brach for Autoupdate
 GLUON_BRANCH ?= experimental
