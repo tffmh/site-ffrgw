@@ -1,45 +1,59 @@
-#TODO: research on features and packages. Clean up used modules.
-GLUON_SITE_PACKAGES := \
-	gluon-alfred \
-	gluon-respondd \
-	gluon-autoupdater \
-	gluon-mesh-batman-adv-15 \
-	gluon-mesh-vpn-tunneldigger \
-	gluon-radvd \
-	gluon-status-page \
-	gluon-config-mode-autoupdater \
-	gluon-config-mode-contact-info \
-	gluon-config-mode-geo-location-osm \
-	gluon-config-mode-hostname \
-	gluon-config-mode-mesh-vpn \
-	gluon-ebtables-filter-multicast \
-	gluon-ebtables-filter-ra-dhcp \
-	gluon-web-admin \
-	gluon-web-autoupdater \
-	gluon-web-network \
-	gluon-web-wifi-config \
-	gluon-web-osm \
-	haveged \
-	iwinfo
+# Versionstring
+DEFAULT_GLUON_RELEASE := 0.10.0a5b1+$(shell date '+%Y%m%d')
 
-# SSID Changer
-GLUON_SITE_PACKAGES += \
-	gluon-ssid-changer
+GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
 
-#TODO: enable multidomain support
+# Default priority for updates
+GLUON_PRIORITY ?= 7
+
 # Languages to include
 GLUON_LANGS ?= en de
 
-DEFAULT_GLUON_RELEASE := 0.10.0a4b2+$(shell date '+%Y%m%d')
-
-# Allow overriding the release number from the command line
-GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
-
-# Default priority for updates.
-GLUON_PRIORITY ?= 0
-
 # Region code required for some images; supported values: us eu
-GLUON_REGION ?= eu
+GLUON_REGION = eu
 
-# Brach for Autoupdate
-GLUON_BRANCH ?= experimental
+# Prefer ath10k firmware with 802.11s support
+GLUON_WLAN_MESH = 11s
+
+# Build gluon with multidomain support
+GLUON_MULTIDOMAIN = 1
+
+# TODO: research on every module and write documentation
+GLUON_FEATURES := \
+	autoupdater \
+	config-mode-core \
+	config-mode-domain-select \
+	config-mode-geo-location-osm \
+	ebtables-filter-multicast \
+	ebtables-filter-ra-dhcp \
+	mesh-batman-adv-15 \
+	mesh-vpn-tunneldigger \
+	radvd \
+	radv-filterd \
+	respondd \
+	setup-mode \
+	ssid-changer \
+	status-page \
+	web-advanced \
+	web-private-wifi \
+	web-wizard
+
+GLUON_SITE_PACKAGES := \
+	gluon-ssid-changer \
+	haveged \
+	iwinfo \
+
+ifeq ($(GLUON_TARGET),x86-generic)
+GLUON_SITE_PACKAGES += \
+    kmod-usb-hid
+endif
+
+ifeq ($(GLUON_TARGET),x86-64)
+GLUON_SITE_PACKAGES += \
+    kmod-usb-hid
+endif
+
+ifeq ($(GLUON_TARGET),x86-geode)
+GLUON_SITE_PACKAGES += \
+    kmod-usb-hid
+endif
