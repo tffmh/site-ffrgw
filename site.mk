@@ -39,7 +39,7 @@ GLUON_FEATURES := \
 	web-wizard
 
 GLUON_SITE_PACKAGES := \
-#	gluon-ssid-changer \
+	gluon-ssid-changer \
 	haveged \
 	iwinfo \
 
