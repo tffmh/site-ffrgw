@@ -15,4 +15,4 @@ As with Debian 10.1
 `sudo apt install git subversion build-essential gawk unzip libncurses5-dev zlib1g-dev libssl-dev time`
 
 ### Building
-The firmware can be build by following the steps as descriped in: ["Gluon: Getting started"](https://gluon.readthedocs.io/en/v2018.2.x/user/getting_started.html "Gluon Website")
+The firmware can be build by following the steps as descriped in: ["Gluon: Getting started"](https://gluon.readthedocs.io/en/v2019.1/user/getting_started.html "Gluon Website")
