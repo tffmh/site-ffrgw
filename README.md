@@ -5,7 +5,7 @@ Repository holds the site configuration to build firmware for the community
 "Freifunk Ruhrgebiet West", the configuration is not officially
 sanctioned by ["Freifunk Ruhrgebiet West e.V."](https://freifunk.ruhr/ "Freifunk Ruhrgebiet West e.V. Website").
 
-Preparation for __Gluon 2019.1.1__
+Preparation for __Gluon 2019.1__
 
 ## Building the firmware
 
