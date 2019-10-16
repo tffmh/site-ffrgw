@@ -18,6 +18,9 @@ GLUON_WLAN_MESH = 11s
 # Build gluon with multidomain support
 GLUON_MULTIDOMAIN = 1
 
+# Build targets that might get unsupported by Gluon in the future
+GLUON_DEPRECATED = full
+
 # TODO: research on every module and write documentation
 GLUON_FEATURES := \
 	autoupdater \
@@ -28,7 +31,6 @@ GLUON_FEATURES := \
 	ebtables-filter-ra-dhcp \
 	mesh-batman-adv-15 \
 	mesh-vpn-tunneldigger \
-	radvd \
 	radv-filterd \
 	respondd \
 	setup-mode \
