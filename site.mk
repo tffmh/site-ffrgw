@@ -1,5 +1,5 @@
 # Versionstring
-DEFAULT_GLUON_RELEASE := 0.10.0a5b1+$(shell date '+%Y%m%d')
+DEFAULT_GLUON_RELEASE := 0.10.0+$(shell date '+%Y%m%d')
 
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
 
