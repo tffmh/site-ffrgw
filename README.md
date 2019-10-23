@@ -16,3 +16,13 @@ As with Debian 10.1
 
 ### Building
 The firmware can be build by following the steps as descriped in: ["Gluon: Getting started"](https://gluon.readthedocs.io/en/v2019.1/user/getting_started.html "Gluon Website")
+
+### Speeding up rebuilds
+To speed up rebuilds we can try to use ccache on some part of the firmware.
+
+`sudo apt install ccache`
+
+Set the following eviornmental variables to have OpenWRT use ccache and have ccache
+compress its cache:
+`CONFIG_CCACHE=y`
+`CCACHE_COMPRESS=y`
