@@ -22,7 +22,7 @@ To speed up rebuilds we can try to use ccache on some part of the firmware.
 
 `sudo apt install ccache`
 
-Set the following eviornmental variables to have OpenWRT use ccache and have ccache
+Set the following eviornment variables to have OpenWRT use ccache and have ccache
 compress its cache:
 `CONFIG_CCACHE=y`
 `CCACHE_COMPRESS=y`
